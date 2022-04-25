@@ -21,3 +21,6 @@ For the FrontEnd
 ``
 npm start
 ``
+# Note
+
+Remember, to run this project successfully, you need your own APIKEY from [Google Cloud](https://cloud.google.com) and create your .env to import it then.
