@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "test": "jest",
-    "dev": "nodemon main.js",
+    "serve": "nodemon main.js",
     "start": "node main.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SergioCampbell/youtubeClon#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "googleapis": "^100.0.0",
