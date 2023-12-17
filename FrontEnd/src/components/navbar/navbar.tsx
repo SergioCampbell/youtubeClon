@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
@@ -18,12 +17,18 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { Button } from "@mui/material";
 
+interface NavbarProps {
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  Submit: () => void;
+  queryInput: string;
+}
+
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: 40,
   borderColor: "hsl(0,0%,18.82%)",
   borderStyle: "solid",
-  backgroundColor: alpha(theme.palette.common.black, 5),
+  backgroundColor: alpha(theme.palette.common.black, 0.5),
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.black, 0.5),
   },
@@ -54,7 +59,7 @@ export default function PrimarySearchAppBar({
   handleChange,
   Submit,
   queryInput,
-}: any) {
+}: NavbarProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);

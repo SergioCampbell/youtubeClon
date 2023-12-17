@@ -97,7 +97,13 @@ function App() {
               alignItems="center"
               item
             >
+            {miniCard[0].etag !== "" ? (
               <Cards miniCard={miniCard} />
+            ) : (
+              Array.from({ length: 6}).map((_, index) => (
+                <Cards miniCard={[DEFAULT_CARD]} key={index} />
+              ))
+            )}
             </Grid>
           </Grid>
         </Grid>

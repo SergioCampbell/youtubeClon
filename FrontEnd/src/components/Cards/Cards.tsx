@@ -19,6 +19,7 @@ export default function Cards({ miniCard }: CardsProps) {
       {miniCard && miniCard[0].etag !== "" ? (
         miniCard.map((item: YTCard) => (
           <Card
+            key={item.id.videoId}
             sx={{
               maxWidth: 345,
               marginBottom: 3,
