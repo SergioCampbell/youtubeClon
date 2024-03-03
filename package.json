@@ -21,7 +21,7 @@
   "homepage": "https://github.com/SergioCampbell/youtubeClon#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.2",
+    "dotenv": "^16.4.2",
     "express": "^4.17.3",
     "googleapis": "^100.0.0",
     "joi": "^17.11.1"
